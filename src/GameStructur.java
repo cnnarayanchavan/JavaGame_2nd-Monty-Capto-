@@ -7,14 +7,25 @@ public class GameStructur {
     int WinHeight=850;
     //needed bigger window this time.
 
-    JFrame frame=new JFrame("MAARIIYOO");
+    //Defined the classes for window 
+    JFrame frame=new JFrame("MAARIIYOO");      //for game window modification.
+    JLabel textLabel=new JLabel();             //for title of game in big font.
+    JPanel textPanel=new Japnel();             //Panel to hold the lable.
+    
 
     GameStructur(){
+
+        //defined the windo dimentions.
         frame.setVisible(true);
         frame.setSize(WinWidth,WinHeight);
         frame.setLocationRelativeTo(null);
         frame.setResizable(true);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setLayout(new BorderLayout());
+
+        //for text (Title of game)
+        textLabel.setFont(new font ("Ariel", Font PLAIN, 50);
+        textLabel.setHorizontalAlignment(JLabel.CENTER);
+        
     }
   }
