@@ -15,8 +15,8 @@ public class GameStructur {
     JButton[] board = new JButton[9];          // Button array for tiles in board 
 
     //Taking Images for tiles in board 
-    ImageIcon=char1;
-    ImaheIcon=char2;
+    ImageIcon= image1st;
+    ImageIcon=image2nd;
     
 
     GameStructur(){
