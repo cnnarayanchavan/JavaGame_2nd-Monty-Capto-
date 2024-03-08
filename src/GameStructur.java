@@ -47,10 +47,10 @@ public class GameStructur {
 
         //For adding button (clickable) used JButton from JFrame and added them into the frame------------------------------
 
-        for(i=0;i<9;i++){
+        for(int i=0;i<9;i++){
             JButton tile = new JButton();                //using for loop for buttons 
             board[i]=tile;
-            boardPanel.add(title);
+            boardPanel.add(tile);
         }
 
         
