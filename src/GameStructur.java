@@ -25,7 +25,13 @@ public class GameStructur {
 
         //for text (Title of game)
         textLabel.setFont(new Font ("Ariel", Font.PLAIN, 50));
-        textLabel.setHorizontalAlignment(JLabel.CENTER);
-        
+        textLabel.setHorizontalAlignment(JLabel.CENTER);          // for aligining the text into the center os window 
+        textLabel.setText("Score : 0");
+        textLabel.setOpeque(true);
+
+        //adding textlabel into the text panel to show up on screem.
+        textPanel.setLayout(new BorderLayout());
+        textPanel.add(textLabel);
+        frame.add(textPanel);
     }
   }
