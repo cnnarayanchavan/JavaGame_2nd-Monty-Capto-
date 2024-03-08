@@ -10,7 +10,7 @@ public class GameStructur {
     //Defined the classes for window 
     JFrame frame=new JFrame("MAARIIYOO");      //for game window modification.
     JLabel textLabel=new JLabel();             //for title of game in big font.
-    JPanel textPanel=new Japnel();             //Panel to hold the lable.
+    JPanel textPanel=new JPanel();             //Panel to hold the lable.
     
 
     GameStructur(){
@@ -24,7 +24,7 @@ public class GameStructur {
         frame.setLayout(new BorderLayout());
 
         //for text (Title of game)
-        textLabel.setFont(new font ("Ariel", Font PLAIN, 50);
+        textLabel.setFont(new Font ("Ariel", Font.PLAIN, 50));
         textLabel.setHorizontalAlignment(JLabel.CENTER);
         
     }
