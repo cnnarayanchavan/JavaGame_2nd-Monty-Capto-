@@ -52,8 +52,5 @@ public class GameStructur {
             board[i]=tile;
             boardPanel.add(tile);
         }
-
-        
-
   }
 }
