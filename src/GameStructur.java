@@ -41,7 +41,7 @@ public class GameStructur {
         
         //this is for board panel -----------------------------------------------------------------
         
-        boardPanel.setLayout(new GridLayout(5,5));
+        boardPanel.setLayout(new GridLayout(3,3));
         boardPanel.setBackground(Color.pink);               //the background color is optional 
         frame.add(boardPanel);
 
