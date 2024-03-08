@@ -11,6 +11,7 @@ public class GameStructur {
     JFrame frame=new JFrame("MAARIIYOO");      //for game window modification.
     JLabel textLabel=new JLabel();             //for title of game in big font.
     JPanel textPanel=new JPanel();             //Panel to hold the lable.
+    JPanel boardPanel=new JPanel();
     
 
     GameStructur(){
@@ -31,7 +32,13 @@ public class GameStructur {
 
         //adding textlabel into the text panel to show up on screem.
         textPanel.setLayout(new BorderLayout());
-        textPanel.add(textLabel);
-        frame.add(textPanel, BorderLayout.NORTH);               //Seted the text to the upper north position.
-    }
+        textPanel.add(textLabel);                               //Seted the text to the upper north position.
+        frame.add(textPanel, BorderLayout.NORTH);               //frame.add(<>)  this is for addinf the updates into the frame       
+        
+        //this is for board panel 
+        boardPanel.setLayout(new GridLayout(5,5));
+        boardPanel.setBackground(Color.pink);               //the background color is optional 
+        frame.add(boardPanel);
+
   }
+}
