@@ -12,7 +12,7 @@ public class GameStructur {
     JLabel textLabel=new JLabel();             //for title of game in big font.
     JPanel textPanel=new JPanel();             //Panel to hold the lable.
     JPanel boardPanel=new JPanel();            //for the boardtext or space
-    JButton[] board = new JButton();
+    JButton[] board = new JButton[];
     
 
     GameStructur(){
