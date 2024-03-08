@@ -12,7 +12,11 @@ public class GameStructur {
     JLabel textLabel=new JLabel();             //for title of game in big font.
     JPanel textPanel=new JPanel();             //Panel to hold the lable.
     JPanel boardPanel=new JPanel();            //for the boardtext or space
-    JButton[] board = new JButton[9];
+    JButton[] board = new JButton[9];          // Button array for tiles in board 
+
+    //Taking Images for tiles in board 
+    ImageIcon=char1;
+    ImaheIcon=char2;
     
 
     GameStructur(){
@@ -44,8 +48,12 @@ public class GameStructur {
         boardPanel.setLayout(new GridLayout(5,5));
         boardPanel.setBackground(Color.pink);               //the background color is optional 
         frame.add(boardPanel);
+        
 
         //For adding button (clickable) used JButton from JFrame and added them into the frame------------------------------
+        //also for taking imagers source---------------------------------------------------------------------
+
+        char1=new ImageIcon(getClass().getResource("./Char1(mondy).png"));
 
         for(int i=0;i<9;i++){
             JButton tile = new JButton();                //using for loop for buttons 
