@@ -32,6 +32,6 @@ public class GameStructur {
         //adding textlabel into the text panel to show up on screem.
         textPanel.setLayout(new BorderLayout());
         textPanel.add(textLabel);
-        frame.add(textPanel, BoarderLayout.NORTH);               //Seted the text to the upper north position.
+        frame.add(textPanel, BorderLayout.NORTH);               //Seted the text to the upper north position.
     }
   }
