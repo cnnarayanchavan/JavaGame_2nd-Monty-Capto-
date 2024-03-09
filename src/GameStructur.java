@@ -86,7 +86,7 @@ public class GameStructur {
 
         // hopping the monty character on tiles =========================================================
         
-          set_for_monty=new Timer(1500, new ActionListener(){
+          set_for_monty=new Timer(1000, new ActionListener(){
               public void actionPerformed(ActionEvent e){
                   if(for_monty!=null){
                       for_monty.setIcon(null);
