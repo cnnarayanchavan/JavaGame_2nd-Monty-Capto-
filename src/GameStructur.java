@@ -128,5 +128,7 @@ public class GameStructur {
                   
 
           set_for_monty.start();
+          set_for_captos.start();
+        
     }
 }
