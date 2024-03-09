@@ -115,7 +115,7 @@ public class GameStructur {
                   }
                   
                   //for randomely select another tile
-                  int num=random.nextInt(9);  //from 0-9
+                  int num=random.nextInt(9);  //from 0-8
                   JButton tile=board[num];
 
 
