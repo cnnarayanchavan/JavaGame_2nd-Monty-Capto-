@@ -80,22 +80,27 @@ public class GameStructur {
             board[i]=tile;
             boardPanel.add(tile);
             tile.setFocusable(false);
-            tile.setIcon(image2);                     //comemt it temp.
+            //tile.setIcon(image2);                     //comemt it temp.
             //tile.setIcon(image1);
         }
-          set_for_monty=new Timer(1000, new ActionListener(){
+          set_for_monty=new Timer(1500, new ActionListener(){
               public void actionPerformed(ActionEvent e){
                   if(for_monty!=null){
                       for_monty.setIcon(null);
                       for_monty=null;
                   }
                   
+                  //for randomely select another tile
                   int num=random.nextInt(9);  //from 0-9
                   JButton tile=board[num];
 
-                  set_for_monty=tile;
-                  set_for_monty.setIcon(moleIcon);
+
+                  for_monty = tile;
+                  for_monty.setIcon(image1);
+
               }
           });
+
+          set_for_monty.start();
     }
 }
