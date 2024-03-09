@@ -83,6 +83,9 @@ public class GameStructur {
             //tile.setIcon(image2);                     //comemt it temp.
             //tile.setIcon(image1);
         }
+
+        // hopping the monty character on tiles =========================================================
+        
           set_for_monty=new Timer(1500, new ActionListener(){
               public void actionPerformed(ActionEvent e){
                   if(for_monty!=null){
@@ -101,7 +104,28 @@ public class GameStructur {
               }
           });
 
-          
+
+        //Hopping the captos character on tiles =======================================================
+
+             set_for_captos=new Timer(1500, new ActionListener(){
+              public void actionPerformed(ActionEvent e){
+                  if(for_captos!=null){
+                      for_captos.setIcon(null);
+                      for_captos=null;
+                  }
+                  
+                  //for randomely select another tile
+                  int num=random.nextInt(9);  //from 0-9
+                  JButton tile=board[num];
+
+
+                  for_captos = tile;
+                  for_captos.setIcon(image2);
+
+              }
+          });
+
+                  
 
           set_for_monty.start();
     }
