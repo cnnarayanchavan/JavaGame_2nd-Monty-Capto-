@@ -97,6 +97,9 @@ public class GameStructur {
                   int num=random.nextInt(9);  //from 0-9
                   JButton tile=board[num];
 
+                  //if tile if alreadt taken by char_1 then skip this 
+                  if(for_monty==tile) return;
+
 
                   for_monty = tile;
                   for_monty.setIcon(image1);
@@ -117,6 +120,10 @@ public class GameStructur {
                   //for randomely select another tile
                   int num=random.nextInt(9);  //from 0-8
                   JButton tile=board[num];
+
+                  
+                   //if tile if alreadt taken by char_1 then skip this 
+                  if(for_captos==tile) return;
 
 
                   for_captos = tile;
