@@ -83,6 +83,15 @@ public class GameStructur {
             tile.setIcon(image2);                     //comemt it temp.
             //tile.setIcon(image1);
         }
-
-  }
+          set_for_monty=new Timer(1000, new ActionListener(){
+              public void actionPerformed(ActionEvent e){
+                  if(for_monty!=null){
+                      for_monty.setIcon(null);
+                      for_monty=null;
+                  }
+                  int num=random.nextInt(9);  //from 0-9
+                  JButton tile=board[num];
+              }
+          });
+    }
 }
