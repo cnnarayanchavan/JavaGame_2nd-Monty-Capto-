@@ -13,10 +13,17 @@ public class GameStructur {
     JPanel textPanel=new JPanel();             //Panel to hold the lable.
     JPanel boardPanel=new JPanel();            //for the boardtext or space
     JButton[] board = new JButton[9];           //for array button
+    
 
     //takiing image resources-----------------------------------------------------
     ImageIcon image1;
     ImageIcon image2;
+
+    
+    //for randomely placing monty and captos on board tiles =-----------------------------------------
+    JButton for_monty;
+    JButton for_captos;
+    Random random = new Random();
     
 
     GameStructur(){
