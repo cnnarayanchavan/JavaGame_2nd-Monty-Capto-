@@ -12,7 +12,11 @@ public class GameStructur {
     JLabel textLabel=new JLabel();             //for title of game in big font.
     JPanel textPanel=new JPanel();             //Panel to hold the lable.
     JPanel boardPanel=new JPanel();            //for the boardtext or space
-    JButton[] board = new JButton[9];
+    JButton[] board = new JButton[9];           //for array button
+
+    //takiing image resources-----------------------------------------------------
+    ImageIcon image1;
+    ImageIcon image2;
     
 
     GameStructur(){
@@ -42,15 +46,30 @@ public class GameStructur {
         //this is for board panel -----------------------------------------------------------------
         
         boardPanel.setLayout(new GridLayout(3,3));
-        boardPanel.setBackground(Color.pink);               //the background color is optional 
+        boardPanel.setBackground(Color.black);               //the background color is optional 
         frame.add(boardPanel);
 
         //For adding button (clickable) used JButton from JFrame and added them into the frame------------------------------
+        //and the images on the tiles
+        //here instead of taking direct image we reduce the size of an image from its actual size to fit in a tile perfectly
+
+
+        // image1 = new ImageIcon(getClass().getResource("./Char1_monty.png"));                     //this is for captos image
+        Image captos = new ImageIcon(getClass().getResource("./Char2_capto.png")).getImage();
+        image2 = new ImageIcon(captos.getScaledInstance(150, 150,java.awt.Image.SCALE_SMOOTH));
+
+
+        Image monty= new ImageIcon(getClass().getResource("./Char1_monty.png")).getImage();   //this is for moel image
+        image1 = new ImageIcon(monty.getScaledInstance(150, 150,java.awt.Image.SCALE_SMOOTH));
+
 
         for(int i=0;i<9;i++){
             JButton tile = new JButton();                //using for loop for buttons 
             board[i]=tile;
             boardPanel.add(tile);
+            tile.setFocusable(false);
+            //tile.setIcon(image2);                     //comemt it temp.
+            //tile.setIcon(image1);
         }
   }
 }
