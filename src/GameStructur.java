@@ -101,6 +101,8 @@ public class GameStructur {
               }
           });
 
+          
+
           set_for_monty.start();
     }
 }
