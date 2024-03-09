@@ -89,8 +89,12 @@ public class GameStructur {
                       for_monty.setIcon(null);
                       for_monty=null;
                   }
+                  
                   int num=random.nextInt(9);  //from 0-9
                   JButton tile=board[num];
+
+                  set_for_monty=tile;
+                  set_for_monty.setIcon(moleIcon);
               }
           });
     }
