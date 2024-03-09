@@ -24,6 +24,11 @@ public class GameStructur {
     JButton for_monty;
     JButton for_captos;
     Random random = new Random();
+
+
+    //for timer and delay in placing characters---------------------------------------------------------
+    Timer set_for_monty;
+    Timer set_for_captos;
     
 
     GameStructur(){
@@ -78,5 +83,6 @@ public class GameStructur {
             tile.setIcon(image2);                     //comemt it temp.
             //tile.setIcon(image1);
         }
+
   }
 }
