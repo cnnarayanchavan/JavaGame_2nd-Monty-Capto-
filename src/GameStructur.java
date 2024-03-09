@@ -12,7 +12,16 @@ public class GameStructur {
     JLabel textLabel=new JLabel();             //for title of game in big font.
     JPanel textPanel=new JPanel();             //Panel to hold the lable.
     JPanel boardPanel=new JPanel();            //for the boardtext or space
-    JButton[] board = new JButton[9];
+    JButton[] board = new JButton[9];           //for defining the button tiles on board 
+
+    JButton for_Monty;
+    JButton for_Captos;                           //this is for randomely clickable buttons for montyand captos
+
+    Random random = new Random();
+    Timer setMonty;                                // for timer and randomely putting the tiles 
+    Timer setCaptos;
+
+    
     
 
     GameStructur(){
