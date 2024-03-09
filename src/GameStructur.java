@@ -68,7 +68,7 @@ public class GameStructur {
             board[i]=tile;
             boardPanel.add(tile);
             tile.setFocusable(false);
-            //tile.setIcon(image2);                     //comemt it temp.
+            tile.setIcon(image2);                     //comemt it temp.
             //tile.setIcon(image1);
         }
   }
