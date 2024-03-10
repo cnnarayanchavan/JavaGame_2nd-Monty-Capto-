@@ -97,6 +97,8 @@ public class GameStructur {
                    }
                    else if(tile == for_captos){
                         textLabel.setText("Game Over: " +Integer.toString(Score));
+                       set_for_monty.stop();
+                       set_for_captos.stop();
                    }
                } 
             });
