@@ -88,7 +88,7 @@ public class GameStructur {
 
             //have to add action listener within loop
             tile.addActionListener(new ActionListener(){
-               public void actionPerformed(ActinEvent e){
+               public void actionPerformed(ActionEvent e){
                    JButton tile = (JButton) e.getSource();   //here get source is an object type so we need to first cast it into the JButton
                    //now the if else
                    
