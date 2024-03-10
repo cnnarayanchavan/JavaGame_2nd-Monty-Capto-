@@ -93,10 +93,10 @@ public class GameStructur {
                    //now the if else
                    if(tile==for_monty){
                        Score+=10;
-                       textLabel.setText("Score: " +Interger.toString(Score));
+                       textLabel.setText("Score: " +Integer.toString(Score));
                    }
-                   esle if(tile == for_captos){
-                        textLabel.setText("Game Over: " +Interger.toString(Score));
+                   else if(tile == for_captos){
+                        textLabel.setText("Game Over: " +Integer.toString(Score));
                    }
                } 
             });
