@@ -29,6 +29,9 @@ public class GameStructur {
     //for timer and delay in placing characters---------------------------------------------------------
     Timer set_for_monty;
     Timer set_for_captos;
+
+    //Defining variable for trakinf score .......
+    int Score=0;
     
 
     GameStructur(){
@@ -82,6 +85,15 @@ public class GameStructur {
             tile.setFocusable(false);
             //tile.setIcon(image2);                     //comemt it temp.
             //tile.setIcon(image1);
+
+            //have to add action listener within loop
+            tile.addActionListener(new ActionListener(){
+               public void actionPerformed(ActinEvent e){
+                   JButton tile = (JButton) e.getSource();   //here get source is an object type so we need to first cast it into the JButton
+                   //now the if else
+                   
+               } 
+            });
         }
 
         // hopping the monty character on tiles =========================================================
