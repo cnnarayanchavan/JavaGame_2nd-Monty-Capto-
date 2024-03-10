@@ -100,7 +100,7 @@ public class GameStructur {
                        set_for_monty.stop();
                        set_for_captos.stop();        //if this clicked performed on captos we have to iterate throuch all the buttons and make it desible
                        for(int i=0; i<9; i++){
-                           board[i].setEnable(false);
+                           board[i].setEnabled(false);
                        }
                    }
                } 
