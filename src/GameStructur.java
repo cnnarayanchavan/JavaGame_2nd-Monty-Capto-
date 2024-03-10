@@ -91,7 +91,13 @@ public class GameStructur {
                public void actionPerformed(ActionEvent e){
                    JButton tile = (JButton) e.getSource();   //here get source is an object type so we need to first cast it into the JButton
                    //now the if else
-                   
+                   if(tile==for_monty){
+                       Score+=10;
+                       textLabel.setText("Score: " +Interger.toString(Score));
+                   }
+                   esle if(tile == for_captos){
+                        textLabel.setText("Game Over: " +Interger.toString(Score));
+                   }
                } 
             });
         }
