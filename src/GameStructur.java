@@ -3,8 +3,8 @@ import java.awt.event.*;
 import java.util.Random;   //IMPORTED NEEDED PACAKGES FOR MAKING WINDOWS
 import javax.swing.*;    // TO PLACR THE CHARACTER IN THE GAME AT RANDOM TILES
 public class GameStructur {
-    int WinWidth=1550;
-    int WinHeight=850;
+    int WinWidth=600;
+    int WinHeight=650;
     //needed bigger window this time.
 
     //Defined the classes for window 
